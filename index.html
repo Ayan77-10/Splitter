@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="body">
+      <img src="./images/logo.svg" alt="oops? I am at wrong place " />
+      <div class="main">
+        <div class="mainLeft">
+          <div class="bill">
+            <label for="bill" name="bill">Bill</label>
+            <div class="billInput">
+              <img src="./images/icon-dollar.svg" alt="dollar here">
+              <input type="text" placeholder="$0.00" name="bill" id="bill" />
+            </div>
+          </div>
+          <div class="commission">
+            <p>Select Tip</p>
+            <div class="percentage">
+              <button  value="syan"  class="btn">5%</button>
+              <button  class="btn">10%</button>
+              <button class="btn" id="third">15%</button>
+              <button class="btn" >20%</button>
+              <button class="btn" >25%</button>
+              <input type="text" placeholder="custom" id="custom" />
+            </div>
+          </div>
+          <div class="person">
+            <label for="person" name="person">Number of persons</label>
+            <div class="personInput">
+              <img src="./images/icon-person.svg" alt="">
+              <input type="text" placeholder="1" name="person" id="person" />
+            </div>
+          </div>
+        </div>
+        <div class="mainRight">
+          <div class="firstContainer">
+            <div class="total">
+              <div class="title">
+                <h5>Tip Amount</h5>
+                <span>/ Person</span>
+              </div>
+              <div class="number">
+              
+                <h2 id="totalAmt">$0.00</h2>
+              </div>
+            </div>
+            <div class="totalPerPerson">
+              <div class="title">
+                <h5>Total</h5>
+                <span>/ Person</span>
+              </div>
+              <div class="number">
+                <h2 id="perPerson">$0.00</h2>
+              </div>
+            </div>
+          </div>
+          <div class="reset">
+            <button type="reset" id="reset">reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

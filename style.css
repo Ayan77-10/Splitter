@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Manrope:wght@800&family=Rubik&family=Space+Mono:wght@700&display=swap');
+*{
+    margin: 0;
+}
+:root{
+    --font-family:'Space Mono', monospace;
+    --main-bg:hsl(185, 41%, 84%);
+    --main-white :  hsl(0, 0, 100%);
+    --main-right: hsl(183, 100%, 15%);
+    --main-hover: hsl(172, 67%, 45%);
+    --very-light-grayish : hsl(189, 41%, 97%);
+    --grayish-cyan:hsl(184, 14%, 56%);
+}
+.body{
+    height: 100vh;
+    width: 100%;
+    font-family: var(--font-family);
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.main{
+    /* margin: auto; */
+    height: 70vh;
+    width:  65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white !important;
+    border-radius: 15px;
+}
+/* Main Left  */
+.mainLeft{
+    flex: 0.4;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+/* BILL COMPONENT */
+.bill{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bill > label{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--grayish-cyan);
+}
+.billInput{
+    display: flex;
+    height: 30%;
+    width: 95%;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    background-color: var(--very-light-grayish);
+    align-items: center;
+} 
+.billInput > img{
+    height: 25px ;
+    width: 25px;
+    margin-left: 10px;
+}
+#bill{
+     /* margin-top: 0.3rem; */
+    text-align: right;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 0.2rem;
+    background-color:var(--very-light-grayish);
+    font-family:var(--font-family) ;
+    color: var(--main-right);
+    outline: none;
+    border: none;
+} 
+/* TIP  */
+.commission{
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    
+}
+.commission > p {
+    color: var(--grayish-cyan);
+}
+.percentage{
+    flex: 0.3;
+    display: grid;
+    grid-template-columns: 1fr  1fr   1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+    margin-top: 0.3rem;
+}
+.percentage > button{
+    padding: 0.3rem;
+    background-color: hsl(183, 100%, 15%);
+    color:hsl(189, 41%, 97%);
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+}
+.percentage > button:hover{
+    background-color: var(--main-hover);
+    cursor: pointer;
+
+}
+/* #third{
+    width: 78px;
+} */
+#custom{
+    width: 90%;
+    font-family: var(--font-family);
+    background-color: var(--very-light-grayish);
+    color: #00494D;
+    border: none;
+    
+}
+.percentage > input{
+    outline: none;
+    text-align: right;
+    border-radius: 10px;
+    padding: 0.2rem;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: hsl(189, 41%, 97%);
+}
+/* NUMBER OF PERSON */
+.person{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+}
+.person > label{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--grayish-cyan);
+}
+.personInput{
+    display: flex;
+    height: 30%;
+    width: 95%;
+    align-items: center;
+    background-color: var(--very-light-grayish);
+    margin-top: 0.5rem;
+}
+.personInput > img{
+    height: 25px;
+    margin-left: 10px;
+    width: 25px;
+}
+#person{
+    margin-top: 0.3rem;
+    text-align: right;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 0.2rem;
+    width: 95%;
+    color: var(--main-right);
+    font-family: var(--font-family);
+    background-color: var(--very-light-grayish);
+    border:1px solid white;
+    outline: #00494D !important;
+}
+/* Main right  */
+.mainRight{
+    flex: 0.45;
+    height:84%;
+    width: 45%;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.2rem;
+    background-color: var(--main-right);
+    border-radius: 15px;
+    padding: 1.2rem;
+}
+.firstContainer{
+    width: 95%;
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+.title > h5{
+    color: var(--very-light-grayish);
+}
+.title > span{
+    color: var(--grayish-cyan);
+    font-size: 0.7em;
+}
+.number{
+    /* width: 32%; */
+    display:flex;
+    align-items: center;
+}
+
+.number > h2{
+    color: var(--main-hover);
+    font-size: 2em;
+}
+.totalPerPerson{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset{
+    flex: 0.1;
+    text-align: center;
+}
+.reset > button {
+    width: 70%;
+    padding: .75rem;
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px ;
+    outline: none;
+    background-color: var(--main-hover);
+    color:var(--main-right);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.reset > button:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width:950px) {
+    .body{
+        height: 140vh;
+        width: 100%;
+    }
+    .main{
+        height: 120vh;
+        width:96% ;
+        flex-direction: column;
+    }
+    .mainLeft{
+        flex: 0.6;
+        width: 95%;
+    }
+    .bill{
+        flex: 0.3;
+        margin-top: 3rem ;
+    }
+    .billInput{
+        background-color: var(--very-light-grayish);
+        border-radius: 15px;
+        width: 95%;
+        height: 52%;
+    }
+    #bill{
+        font-family: var(--font-family);
+        font-weight: 600;
+        color: var(--main-right);
+        width: 98%;
+        background-color: var(--very-light-grayish);
+    }
+    .commission{
+        flex: 0.4;
+        margin-top: 2rem;
+    }
+    .person{
+        flex: 0.3;
+        margin-top: 2rem;
+    }
+    .personInput{
+        background-color: var(--very-light-grayish);
+        border-radius: 15px;
+        width: 95%;
+        height: 52%;
+    }
+    #person{
+        font-family: var(--font-family);
+        color: var(--main-right);
+        font-weight: 600;
+        width: 98%;
+        outline: var(--main-right);
+    }
+    .mainRight{
+        
+        height: 30%;
+        width: 88%;
+    }
+    .firstContainer{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .number > h2{
+        font-size: 1.5em;
+    }
+    #custom{
+        width: 95%;
+        font-family: var(--font-family);
+        color: var(--main-right);
+    }
+
+    
+    
+
+}
